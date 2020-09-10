@@ -29,6 +29,7 @@ namespace BigFilesSort.Models
             var digCount = GetCount(FS);
             FS.Position = 0;
 
+            //Первичная сортировка блоков (для более быстрой последующей сортировки)
             while (FS.Position < FS.Length)
             {
                 SkipNotDigit(FS);
@@ -52,6 +53,7 @@ namespace BigFilesSort.Models
             SkipDigits(FS, digStart);
             int endCount = ReadToBuffer(FS, intBuffer, half, half);
 
+            //Сортировка по половинам блока по принципу пузырька
             while (digStart >= half)
             {
                 long writePos = 0;
