@@ -1,0 +1,9 @@
+F:\Programs\VSProjects\BigFilesSort\BigFilesSort\bin\Debug\netstandard2.0\BigFilesSort.deps.json
+F:\Programs\VSProjects\BigFilesSort\BigFilesSort\bin\Debug\netstandard2.0\BigFilesSort.dll
+F:\Programs\VSProjects\BigFilesSort\BigFilesSort\bin\Debug\netstandard2.0\BigFilesSort.pdb
+F:\Programs\VSProjects\BigFilesSort\BigFilesSort\obj\Debug\netstandard2.0\BigFilesSort.csprojAssemblyReference.cache
+F:\Programs\VSProjects\BigFilesSort\BigFilesSort\obj\Debug\netstandard2.0\BigFilesSort.AssemblyInfoInputs.cache
+F:\Programs\VSProjects\BigFilesSort\BigFilesSort\obj\Debug\netstandard2.0\BigFilesSort.AssemblyInfo.cs
+F:\Programs\VSProjects\BigFilesSort\BigFilesSort\obj\Debug\netstandard2.0\BigFilesSort.dll
+F:\Programs\VSProjects\BigFilesSort\BigFilesSort\obj\Debug\netstandard2.0\BigFilesSort.pdb
+F:\Programs\VSProjects\BigFilesSort\BigFilesSort\obj\Debug\netstandard2.0\BigFilesSort.csproj.CoreCompileInputs.cache

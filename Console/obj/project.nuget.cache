@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SwEhoiSSx3nqd+1IqhvbMNh19wkZQHFJydvTbFh2aXe3/uVPusxiaNybgK3TgNxvi52JsfrvWszXeeTQW/Jv3A==",
+  "success": true,
+  "projectFilePath": "F:\\Programs\\VSProjects\\BigFilesSort\\Console\\ProgramConsole.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ivanp\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}

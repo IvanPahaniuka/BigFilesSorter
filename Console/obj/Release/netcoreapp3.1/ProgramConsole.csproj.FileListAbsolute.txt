@@ -1,0 +1,16 @@
+F:\Programs\VSProjects\BigFilesSort\Console\bin\Release\netcoreapp3.1\ProgramConsole.exe
+F:\Programs\VSProjects\BigFilesSort\Console\bin\Release\netcoreapp3.1\ProgramConsole.deps.json
+F:\Programs\VSProjects\BigFilesSort\Console\bin\Release\netcoreapp3.1\ProgramConsole.runtimeconfig.json
+F:\Programs\VSProjects\BigFilesSort\Console\bin\Release\netcoreapp3.1\ProgramConsole.runtimeconfig.dev.json
+F:\Programs\VSProjects\BigFilesSort\Console\bin\Release\netcoreapp3.1\ProgramConsole.dll
+F:\Programs\VSProjects\BigFilesSort\Console\bin\Release\netcoreapp3.1\ProgramConsole.pdb
+F:\Programs\VSProjects\BigFilesSort\Console\bin\Release\netcoreapp3.1\BigFilesSort.dll
+F:\Programs\VSProjects\BigFilesSort\Console\bin\Release\netcoreapp3.1\BigFilesSort.pdb
+F:\Programs\VSProjects\BigFilesSort\Console\obj\Release\netcoreapp3.1\ProgramConsole.csprojAssemblyReference.cache
+F:\Programs\VSProjects\BigFilesSort\Console\obj\Release\netcoreapp3.1\ProgramConsole.AssemblyInfoInputs.cache
+F:\Programs\VSProjects\BigFilesSort\Console\obj\Release\netcoreapp3.1\ProgramConsole.AssemblyInfo.cs
+F:\Programs\VSProjects\BigFilesSort\Console\obj\Release\netcoreapp3.1\ProgramConsole.csproj.CoreCompileInputs.cache
+F:\Programs\VSProjects\BigFilesSort\Console\obj\Release\netcoreapp3.1\ProgramConsole.csproj.CopyComplete
+F:\Programs\VSProjects\BigFilesSort\Console\obj\Release\netcoreapp3.1\ProgramConsole.dll
+F:\Programs\VSProjects\BigFilesSort\Console\obj\Release\netcoreapp3.1\ProgramConsole.pdb
+F:\Programs\VSProjects\BigFilesSort\Console\obj\Release\netcoreapp3.1\ProgramConsole.genruntimeconfig.cache

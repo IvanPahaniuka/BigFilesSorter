@@ -1,0 +1,60 @@
+﻿<Window x:Class="ProgramUI.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgramUI.View"
+        xmlns:model="clr-namespace:ProgramUI.ViewModel"
+        xmlns:conv="clr-namespace:ProgramUI.View.Converters"
+        mc:Ignorable="d"
+        Title="Сортировщик" SizeToContent="WidthAndHeight" ResizeMode="CanMinimize">
+    <Window.Resources>
+        <conv:InverseBooleanConverter x:Key="inverseBooleanConverter"/>
+        <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"/>
+        <Style TargetType="Label" x:Key="labelStyle">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=IsInProcess}" Value="True">
+                    <DataTrigger.EnterActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="Opacity" To="1.0"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </DataTrigger.EnterActions>
+                    <DataTrigger.ExitActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="Opacity" To="0.0"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </DataTrigger.ExitActions>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="model:MainWindowCommands.SelectPath" 
+                        CanExecute="CommandBinding_SelectPath_CanExecute" 
+                        Executed="CommandBinding_SelectPath"/>
+        <CommandBinding Command="model:MainWindowCommands.Sort" 
+                        CanExecute="CommandBinding_Sort_CanExecute" 
+                        Executed="CommandBinding_Sort"/>
+    </Window.CommandBindings>
+    <StackPanel Margin="40, 25, 40, 35">
+        <Label FontSize="45" HorizontalAlignment="Center" Margin="0, 0, 0, 25" Foreground="#222">Сортировщик</Label>
+        <StackPanel Orientation="Horizontal" Margin="0, 20">
+            <Label Width="90">Путь к файлу</Label>
+            <TextBox Text="{Binding Path=FilePath}" IsReadOnly="True" Foreground="#666"
+                     Width="200" Margin="5, 0" FontSize="17"/>
+            <Button IsEnabled="{Binding Path=IsInProcess, Converter={StaticResource inverseBooleanConverter}}" 
+                    Width="60" Command="model:MainWindowCommands.SelectPath">Обзор...</Button>
+        </StackPanel>
+        <Button IsEnabled="{Binding Path=IsInProcess, Converter={StaticResource inverseBooleanConverter}}"
+            Command="model:MainWindowCommands.Sort"
+            HorizontalAlignment="Center" Height="32" Width="200">Отсортировать</Button>
+        <Label Opacity="0.0" Style="{StaticResource labelStyle}"
+               FontSize="10" Foreground="#666" HorizontalAlignment="Center">
+            Пожалуйста подождите...
+        </Label>
+    </StackPanel>
+</Window>
